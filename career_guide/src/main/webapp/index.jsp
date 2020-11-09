@@ -16,21 +16,41 @@
 </head>
 <body>
 <% 
-String firstname=request.getParameter("firstname");
-out.println("First Name is "+ firstname);%><br><%
-String lastname=request.getParameter("lastname");
-out.println("Last Name is "+ lastname);%><br><%
-String username=request.getParameter("username");
-out.println(" User Name is "+ username);%><br><%
-String email=request.getParameter("email");
-out.println("Email is "+ email);%><br><%
-String phonenumber=request.getParameter("phonenumber");
-out.println("Phone is "+ phonenumber);%><br><%
-String dob=request.getParameter("dob");
-out.println("Date of Birth is "+ dob);
-%> <br> <%
-String password=request.getParameter("password");
-out.println("Password is "+ password);%> <br> <%
+	String firstname=request.getParameter("firstname");
+	out.println("First Name is "+ firstname);
+%>	
+	<br>
+<%
+	String lastname=request.getParameter("lastname");
+	out.println("Last Name is "+ lastname);
+%>	
+	<br>
+<%
+	String username=request.getParameter("username");
+	out.println(" User Name is "+ username);
+%>
+	<br>
+<%
+	String email=request.getParameter("email");
+	out.println("Email is "+ email);
+%>
+	<br>
+<%
+	String phonenumber=request.getParameter("phonenumber");
+	out.println("Phone is "+ phonenumber);
+%>
+	<br>
+<%
+	String dob=request.getParameter("dob");
+	out.println("Date of Birth is "+ dob);
+%> 
+	<br>
+<%
+	String password=request.getParameter("password");
+	out.println("Password is "+ password);
+%> 
+	<br>
+<%
 
 	try{
 		Connection con=MySqlConnection.getConnection();
@@ -48,8 +68,6 @@ out.println("Password is "+ password);%> <br> <%
 		con.close();
 	}
 	catch(Exception e){System.out.println(e);}
-
-
 %>
 </body>
 </html>
