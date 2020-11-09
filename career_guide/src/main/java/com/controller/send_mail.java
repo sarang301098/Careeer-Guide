@@ -33,7 +33,7 @@ class Mailer{
     }  
     public void sendMail(String email,String uName){
     	
-    	Mailer.send("jeetsolucky98@gmail.com","jeet7898",email,"Verification!!! ","hello "+uName+"\nyou are successful logged");  
+    	Mailer.send("sarangp021@gmail.com","aaaa",email,"Verification!!! ","hello "+uName+"\nyou are successful logged");  
         
     }
 }  
@@ -42,7 +42,7 @@ public class send_mail{
      //from,password,to,subject,message  
      //change from, password and to
 	 Mailer m=new Mailer();
-	 m.sendMail("jeetsolucky98@gmail.com","jeet7898");
+	 m.sendMail("jeetsolucky98@gmail.com","aaaa");
  }    
  
 }    
